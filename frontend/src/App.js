@@ -14,7 +14,6 @@ import Room from "./pages/Room/Room";
 import Chats from "./pages/Chats/Chats";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import SideDrawer from "./components/shared/SideDrawer/SideDrawer";
-import CodeRoom from "./pages/CodeRoom/CodeRoom";
 import theme from "./config/theme";
 import AdminDashBord from "./pages/AdminDashBord/AdminDashBord";
 import AdminLogin from "./pages/AdminLogin/AdminLogin";
