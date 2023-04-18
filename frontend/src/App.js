@@ -12,20 +12,16 @@ import { useLoadingWithrefresh } from "./hooks/useLoadingWithRefresh";
 import Loader from "./components/shared/Loader/Loader";
 import Room from "./pages/Room/Room";
 import Chats from "./pages/Chats/Chats";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import SideDrawer from "./components/shared/SideDrawer/SideDrawer";
 import theme from "./config/theme";
-import AdminDashBord from "./pages/AdminDashBord/AdminDashBord";
 import AdminLogin from "./pages/AdminLogin/AdminLogin";
-import AdminOtp from "./pages/AdminOtp/AdminOtp";
 import { useSelector } from "react-redux";
 import AdminRoutes from "./pages/AdminRoutes/AdminRoutes";
 import NewUsersChart from "./Charts/NewUsersChart"; 
 function App() {
   const  admin = useSelector((state) => state?.adminAuth?.admin);
-  console.log("admin");
-  console.log(admin);
-  console.log("admin");
+
   const user = useSelector((state) => state.auth.user);
 
   const { Loading } = useLoadingWithrefresh();
@@ -48,7 +44,6 @@ function App() {
           <Route element={<ProtectedRoutes />}>
             <Route element={<Rooms />} path="/rooms" />
             <Route element={<Room />} path="/room/:id" />
-            <Route element={<Chats />} path="/chats" />
           </Route>
           <Route element={<AdminRoutes />} >
           <Route element={<NewUsersChart />} path="/dashboard" />
