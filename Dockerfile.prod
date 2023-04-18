@@ -3,7 +3,7 @@ WORKDIR /frontend
 COPY ./frontend/package*.json ./
 RUN npm install
 COPY ./frontend/ ./
-RUN npm run build
+RUN npm run build --legacy-peer-deps
 
 
 FROM ubuntu:18.04

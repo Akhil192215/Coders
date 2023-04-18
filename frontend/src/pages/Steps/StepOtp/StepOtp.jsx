@@ -58,7 +58,7 @@ const StepOtp = ({ navFuction }) => {
             <Button onClick={submit} text={"Verify"} />
           </div>
           <br />
-          <p onClick={resendOtp}>resend otp?</p>
+          {/* <p onClick={resendOtp}>resend otp?</p> */}
           <p className={styles.bottomParagraph}>
             By entering your number, you’re agreeing to our Terms of Service and
             Privacy Policy. Thanks!

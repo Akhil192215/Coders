@@ -49,11 +49,9 @@ function App() {
           <Route element={<ProtectedRoutes />}>
             <Route element={<Rooms />} path="/rooms" />
             <Route element={<Room />} path="/room/:id" />
-            {/* <Route element={<CodeRoom />} path="/code/:id" /> */}
             <Route element={<Chats />} path="/chats" />
           </Route>
           <Route element={<AdminRoutes />} >
-          {/* <Route element={<AdminOtp />} path="/verify" /> */}
           <Route element={<NewUsersChart />} path="/dashboard" />
           </Route>
           <Route  element={<AdminLogin/>} path="/login/admin" />
